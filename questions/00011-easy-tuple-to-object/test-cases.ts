@@ -12,3 +12,6 @@ type cases = [
 
 // @ts-expect-error
 type error = TupleToObject<[[1, 2], {}]>
+
+// @ts-expect-error
+type error1 = TupleToObject<[1, 2]>
